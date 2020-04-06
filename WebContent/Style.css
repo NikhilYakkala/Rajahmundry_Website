@@ -1,0 +1,76 @@
+body {
+background-color: teal;
+margin: 0;
+padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: teal;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: silver;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li a:hover:not(.active) {
+  background-color: gray;
+  color: #fff;
+    text-shadow: 1px 1px 1px #666; 
+}
+
+.active {
+    cursor: default;
+    background-color: gray; 
+    color: #fff; 
+    text-shadow: 1px 1px 1px #666; 
+}
+.login
+{
+float:right;
+}
+img.rmclogo
+{
+	height:40px;
+	width:40px;
+} 
+h3,h1
+{
+color: Orange;	
+font-family: Times New Roman;
+font-style: normal;
+font-size:x-large; 
+}
+p,label
+{
+font-family: Times New Roman;
+font-size: 20px;
+text-align: center;
+color: silver;
+}
+.center {
+    position:absolute;
+    text-align:center;
+    top:20%;
+    right:15%;
+    left:15%;
+}
+a
+{
+text-decoration: none;	
+}
