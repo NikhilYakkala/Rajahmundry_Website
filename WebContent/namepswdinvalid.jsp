@@ -7,7 +7,6 @@
 <body>
 <ul>
 <li><img class="rmclogo" src="https://rajahmundry.cdma.ap.gov.in/sites/default/files/system/Rajahmundry_Municipal_Corporation_logo.png"></img></li>
-  <li class="active" style='float: right'><a href="Login.jsp">Login</a></li>
   <li><a href="index.html">Home</a></li>
   <li><a href="aboutRjy.jsp">About Rajahmundry City</a> 
   <li><a href="attractions.jsp">Attractions</a> 
@@ -20,20 +19,15 @@
 <br>
 <br><br>
 <div class="center">
-<fieldset>
-<legend><h1>Welcome to Login Page</h1></legend>
+<% out.println("<b style='font-family:Times New Roman;font-size:x-large;color:maroon'>Invalid Username & Password.</b>"); %>
+<br>
+<br>
+<%  out.println("<b style='font-family:Times New Roman;font-size:x-large;color:maroon'>Please Click <a href='Login.jsp'> Here </a> to Login again.</b>"); %>
 
-	<form action="loginValidation" method="post">
-		 
-		<label> Enter Username : </label> <input type="text" name="uname"> <br> <br>
-
-		<label> Enter Password : </label> <input type="password" name="upassword"> <br> <br> 
-		
-		&nbsp; &nbsp; <input type="Submit"> &nbsp;
-		
-		<b align="center"> <label> New User? </label> <a href ="Registration.jsp"> <label> Register Here </label> </a></b>
-		</fieldset>
 		</div>
 		</body>
-
+		
+</html>
+	 
+	 </body>
 </html>

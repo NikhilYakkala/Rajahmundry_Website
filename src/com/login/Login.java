@@ -23,7 +23,7 @@ public class Login extends HttpServlet {
 		
 		String password = request.getParameter("upassword");
 		
-		LoginDao logdao = new LoginDao();
+		LoginDao logdao = new LoginDao(); 
 		
 		if(logdao.check(username, password))
 		{
@@ -34,10 +34,28 @@ public class Login extends HttpServlet {
 			 
 			response.sendRedirect("welcome.jsp");
 		}
+		else if((username.isEmpty()&&password.isEmpty())||(username.isEmpty()||password.isEmpty()))
+		{   
+			/*
+			 * out.
+			 * println("<b><font color='green'>Please enter username or password</font></b>"
+			 * );
+			 */
+			
+			response.sendRedirect("namepswdempty.jsp");
+			
+        } 
 		else
 		{   
-            response.sendRedirect("Login.jsp");  
-        }  
+			/*
+			 * request.setAttribute("errorMessage", "Invalid username or password");
+			 * RequestDispatcher dispatcher = request.getRequestDispatcher("Login.jsp");
+			 * dispatcher.forward( request, response);
+			 */
+			
+			response.sendRedirect("namepswdinvalid.jsp");
+			
+        } 
 	}
 
 }
