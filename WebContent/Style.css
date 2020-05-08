@@ -49,12 +49,19 @@ img.rmclogo
 	height:40px;
 	width:40px;
 } 
-h3,h1
+h3,h1,figcaption
 {
 color: Orange;	
 font-family: Times New Roman;
 font-style: normal;
 font-size:x-large; 
+}
+figcaption
+{
+color: lime;	
+font-family: Times New Roman;
+font-style: normal;
+font-size:large; 
 }
 p,label
 {

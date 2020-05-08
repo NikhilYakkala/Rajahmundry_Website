@@ -29,7 +29,7 @@
 
 		<label> Enter Password : </label> <input type="password" name="upassword"> <br> <br> 
 		
-		&nbsp; &nbsp; <input type="submit"> &nbsp;
+		&nbsp; &nbsp; <input type="Submit"> &nbsp;
 		
 		<b align="center"> <label> New User? </label> <a href ="Registration.jsp"> <label> Register Here </label> </a></b>
 		</fieldset>
